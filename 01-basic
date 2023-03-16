@@ -1,0 +1,82 @@
+const meuNome = 'Calebe';
+const minhaIdade = '22';
+const minhaProfissão = 'TI';
+const meuBairro = 'Guajiru'
+const teste = 'Meu nome é' + meuNome + ', tenho' + minhaIdade + ', trabalho' + minhaProfissão + ', moro em' + meuBairro;
+const teste2 = `Meu nome é ${meuNome}, tenho ${minhaIdade}, trabalho ${minhaProfissão}, moro em ${meuBairro}`;
+
+console.log(teste);
+console.log(teste2);
+
+
+
+//Operações
+let a = 10;
+let b = 5;
+
+console.log(a + b); //soma
+console.log(a - b); //subtração
+console.log(a * b); //multiplicação
+console.log(a / b); //divisão
+console.log(a % b); //resto da divisão
+console.log(a ** b); //potencia
+console.log(Math.sqrt(a)); //raiz quadrada
+
+//Arrays
+let array = [1, 2, 3, 4, 5];
+let array2 = ['a', 'b', 'd', 'e'];
+tet array3 = [1, 'a', true, 2.5,  'Calebe', [10,'a', true]];
+console.log(array3[5][2]);
+
+//iteradores
+for (let i = 0; index < array3.length; i++) {
+    console.log(arrey3[i]);
+}
+array3.array.forEach(element => {
+   console.log(element); 
+});
+
+const array5 = array3.map(element => {
+        console.log(element);
+        return element+ 'teste';
+});
+
+console.log(array5);
+const array4 = array3.filter(element => {
+    return element === 2.5;
+});
+
+//funções
+function somar(a, b) {
+    return a + b;
+}
+
+const subtrair = function (a,b){
+    return a - b;
+}
+
+const multiplicar = (a,b) => {
+    return a * b;
+}
+
+const operacaoComplexa = (a,b) =>{
+    const soma = somar(a, b);
+    const subtracao = subtrair(a, somar(soma, b));
+    const mutiplicacao = multiplicar(
+        multiplicar(
+            somar(a, soma), 
+            subtrair(
+                subtracao,
+                somar(
+                    subtracao,b
+                )
+            )
+        ), b
+    );
+    return soma + subtracao + mutiplicacao;
+}
+
+const.resultadoComplexo = operacaoComplexa(10,5);
+console.log(resultadoComplexo);
+
+//Concatenações
